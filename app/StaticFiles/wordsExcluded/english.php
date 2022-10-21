@@ -1,0 +1,23 @@
+<?php
+return[
+    'the',
+    'you',
+    'get',
+    'from',
+    'back',
+    'have',
+    'can',
+    'for',
+    'how',
+    'when',
+    'and',
+    'are',
+    'will',
+    'had',
+    'has',
+    'where',
+    'What',
+    'with',
+    'who',
+    'was',
+];

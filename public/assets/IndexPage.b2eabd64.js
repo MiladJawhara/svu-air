@@ -1,1 +1,0 @@
-import{_ as e}from"./plugin-vue_export-helper.21dcd24c.js";import{a1 as r,Q as a}from"./index.2302f4ea.js";const c={};function n(o,t){return a(),r("div",null," Milad ")}var f=e(c,[["render",n]]);export{f as default};

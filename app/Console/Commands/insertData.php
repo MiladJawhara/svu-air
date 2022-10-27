@@ -2,18 +2,16 @@
 
 namespace App\Console\Commands;
 
-use App\Models\Keyword;
-use App\Models\Question;
 use Illuminate\Console\Command;
 
-class ExtractKeywords extends Command
+class insertData extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'extract:keywords';
+    protected $signature = 'insert:data';
 
     /**
      * The console command description.
@@ -29,10 +27,8 @@ class ExtractKeywords extends Command
      */
     public function handle()
     {
-        $questions = Question::where(['keywords_extracted_at' => null])->get()->all();
-        foreach ($questions as $question) {
-            Keyword::extractKeywords($question);
-        }
+        $statements = \File::get("database/SQLStatments/questions.sql");
+        echo $statements;
         return 0;
     }
 }
